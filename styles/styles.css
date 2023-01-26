@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f6f0ed;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.flip-card {
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    margin-bottom: 45px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+.nombres {
+    padding: 50px;
+    text-align: left;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.horizontal{
+    height: 3px;
+    width: 75px;
+    margin:-30px;
+    background-color: black;
+}
+.vertical{
+    width: 3px;
+    height: 150px;
+    margin-top: 27px;
+    padding-top: 25px;
+    background-color: black;
+    margin-left: 7px;    
+}
+.horizontal-2{
+    height: 3px;
+    width: 160px;
+    background-color: black;
+    margin-left: -480px;
+}
+.vertical-2{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    margin-bottom: -65px;
+    padding-top: 15px;
+    margin-left: -480px;
+}
+.horizontal-3{
+    height: 3px;
+    width: 162px;
+    background-color: black;
+    margin-left: 161px;
+    margin-top: -25px;
+}
+.vertical-3{
+        width: 3px;
+        height: 50px;
+        background-color: black;
+        margin-bottom: -65px;
+        padding-top: 15px;
+        margin-left: 320px;
+}
+.horizontal-4{
+    height: 3px;
+    width: 350px;
+    background-color: black;
+    margin: -25px;
+}
+.vertical-4{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    margin-bottom: -100px;
+    padding-top: 15px;
+    margin-left: 325px;
+    margin-top: 22px;   
+}
+.vertical-5{
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    margin-bottom: -100px;
+    padding-top: 15px;
+    margin-left: -25px;
+    margin-top: 35px;  
+}
+/* Position the front and back side */
+.flip-card-front-female,
+.flip-card-back-female,
+.flip-card-front-male,
+.flip-card-back-male {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-female {
+    background-color: #820933;
+    color: white;
+}
+
+.flip-card-front-male {
+    background-color: #2a6041;
+    color: white;
+}
+
+
+/* Style the back side */
+.flip-card-back-female,
+.flip-card-back-male {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back-female {
+    background-color: white;
+    color: #820933;
+    border: 4px solid #820933;
+    border-radius: 2px;
+}
+
+
+
+.flip-card-back-male {
+    background-color: white;
+    color: #2a6041;
+    border: 4px solid #2a6041;
+    border-radius: 2px;
+}
+
+.flip-card-back-female h2,
+.flip-card-back-male h2 {
+    padding: 25px
+}
+
+.flip-card-back-female p,
+.flip-card-back-male p {
+    padding: 5px;
+}
